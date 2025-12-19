@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc2d8f8d0bf3d7845a1e4fd8e8968674, type: 3}
+  m_Name: LorryConfig
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleConfig
+  vehicleType: 1
+  vehiclePrefab: {fileID: 7112622556748663973, guid: efee5270b16826b4790052e6ad106d17, type: 3}
+  maxSpeed: 70
+  acceleration: 24
+  deceleration: 95
+  angularSpeed: 1020

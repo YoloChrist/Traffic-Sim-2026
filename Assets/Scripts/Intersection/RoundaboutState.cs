@@ -47,4 +47,26 @@ public class RoundaboutState : IIntersectionState
     {
         return "Roundabout";
     }
+
+    public void OnVehicleStopped(Intersection intersection, GameObject vehicle)
+    {
+
+    }
+
+    public void OnVehicleEntering(GameObject vehicle)
+    {
+        // roundabouts handle this in Update()
+    }
+
+    public void OnVehicleLeaving(Intersection intersection, GameObject vehicle)
+    {
+
+    }
+
+    public bool CanVehicleLeave(Intersection intersection, GameObject vehicle)
+    {
+        // use the general CanPassThrough logic
+        Vector3 approachDirection = (intersection.transform.position - vehicle.transform.position).normalized;
+        return CanPassThrough(intersection, approachDirection);
+    }
 }
