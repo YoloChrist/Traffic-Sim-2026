@@ -1,3 +1,0 @@
-roundabout = blue
-stop sign = yellow
-traffic light = green, red, amber
