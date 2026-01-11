@@ -50,9 +50,9 @@ public class AStarPathfinder : IRoadPathfinder
 
     private List<IWaypoint> ExecuteAStar(IWaypoint start, IWaypoint goal)
     {
-        var openQueue = new PathNodePriorityQueue();
-        var closedSet = new HashSet<IWaypoint>();
-        var nodesByWaypoint = new Dictionary<IWaypoint, PathNode>();
+        var openQueue = new PathNodePriorityQueue(); // waypoints to explore, sorted by estimated total cost
+        var closedSet = new HashSet<IWaypoint>(); // waypoints already evaluated
+        var nodesByWaypoint = new Dictionary<IWaypoint, PathNode>(); // mapping of waypoints to their corresponding PathNode
 
         PathNode startNode = new PathNode(start, null, 0f, CalculateHeuristic(start, goal));
         nodesByWaypoint[start] = startNode;

@@ -1,1 +1,0 @@
-Need to replace finding start and end waypoints with a spawner that knows the start and selects the end.

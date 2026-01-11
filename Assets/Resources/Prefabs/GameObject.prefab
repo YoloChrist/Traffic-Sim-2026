@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1022249452184431244
 Transform:
@@ -200,6 +200,10 @@ PrefabInstance:
     - target: {fileID: 4637699207505745120, guid: 5877878d69912674e96b7de4b863ca5e, type: 3}
       propertyPath: waypointType
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752230954440695416, guid: 5877878d69912674e96b7de4b863ca5e, type: 3}
+      propertyPath: next
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5752230954440695416, guid: 5877878d69912674e96b7de4b863ca5e, type: 3}
       propertyPath: waypointType
@@ -497,6 +501,7 @@ MonoBehaviour:
   vehicleLayer:
     serializedVersion: 2
     m_Bits: 128
+  minDistanceToExit: 40
 --- !u!114 &7176075295835246858 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6302356889815929253, guid: 5877878d69912674e96b7de4b863ca5e, type: 3}
